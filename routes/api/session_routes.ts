@@ -6,7 +6,8 @@ const routes = express.Router()
 routes.post("/tabs", controller.postSession)
 
 // READ
-routes.get("/tabs", controller.getSession)
+routes.get("/tabs:id", controller.getSession)
+routes.get("/tabs", controller.getSessions)
 
 // UPDATE
 
